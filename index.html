@@ -1,13 +1,61 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Portfólio - Ramon Silva de Matos</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header>
+      <h1>Ramon Silva de Matos</h1>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+          Sou estudante do curso técnico em Desenvolvimento de Sistemas na Escola Manoel Ignácio. Gosto de criar projetos que misturam tecnologia e criatividade, como jogos 2D estilo RPG em Python e aplicações simples em JavaScript. Também tenho experiência com design de interfaces e estou aprendendo cada vez mais sobre React, banco de dados e segurança da informação.
+        </p>
+      </section>
+
+      <section id="projetos">
+        <h2>Projetos</h2>
+      
+        <div class="projeto">
+          <button class="toggle">💻 Simulador de Bomba de Gasolina</button>
+          <div class="conteudo">
+            <p>Feito em Python com PyQt5. Simula abastecimento com tipos de combustível e valor final.</p>
+            <a href="https://github.com/hincaluan/trabalho_ds.git" target="_blank">🔗 Ver no GitHub</a>
+          </div>
+        </div>
+      
+        <div class="projeto">
+          <button class="toggle">⚔️ Jogo Medieval em godot</button>
+          <div class="conteudo">
+            <p>Jogo 2D estilo pixel art com combate.</p>
+            <a href="https://github.com/RAMONSILVADEMATOS/jogo-medieval" target="_blank">🔗 Ver no GitHub</a>
+          </div>
+        </div>
+      </section>
+      
+
+      <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: kokusilva206@gmail.com</p>
+        <p>GitHub: <a href="https://github.com/ramonkoku" target="_blank">github.com/ramonkoku</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Ramon Silva de Matos</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
