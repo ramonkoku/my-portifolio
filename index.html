@@ -4,105 +4,70 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio - Ramon Silva de Matos</title>
+    <title>Ramon Silva de Matos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <header>
-      <h1>Ramon Silva de Matos</h1>
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <img src="/foto-perfil..jpeg" alt="Minha Foto" class="foto-perfil" />
+        <h1>Ramon Silva de Matos</h1>
+        <p>Desenvolvedor de Sistemas | Estudante | Buscando oportunidades 🚀</p>
+        <a href="#projetos" class="cta">Meus Projetos</a>
+      </div>
+    </section>
 
-    <main>
-      <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Olá! Meu nome é Ramon Silva de Matos, tenho 17 anos e moro em Hortolândia - SP.</p>
-        <p>Sou estudante do curso técnico em Desenvolvimento de Sistemas na Escola Manoel Ignácio, onde desenvolvo habilidades em programação, banco de dados, front-end e back-end.</p>
-        <p>Gosto de aprender coisas novas e estou sempre em busca de melhorar minhas habilidades na área de tecnologia.</p>
-        <section id="sobre">
+    <!-- Sobre Mim -->
+    <section id="sobre" data-aos="fade-up">
+      <h2>Sobre Mim</h2>
+      <p>Olá! Meu nome é Ramon Silva de Matos, tenho 17 anos e moro em Hortolândia - SP.</p>
+      <p>Sou estudante do curso técnico em Desenvolvimento de Sistemas na Escola Manoel Ignácio, onde desenvolvo habilidades em programação, banco de dados, front-end e back-end.</p>
+      <p>Gosto de aprender coisas novas e estou sempre em busca de melhorar minhas habilidades na área de tecnologia.</p>    
+      <ul>
+    
+        <li>📍 Hortolândia - SP</li>
+        <li>📞 (19) 98259-2328</li>
+        <li>📧 kokusilva206@gmail.com</li>
+      </ul>
+    </section>
 
-        <div class="projeto">
-          <button class="toggle">👤 Informações Pessoais</button>
-          <div class="conteudo">
-            <p>Nome: Ramon Silva de Matos</p>
-            <p>Idade: 17 anos</p>
-            <p>Telefone: (19) 19 98259-2328</p>
-            <p>Email: kokusilva206@gmail.com</p>
-            <p>Cidade: Hortolândia - SP</p>
-          </div>
+    <!-- Habilidades -->
+    <section id="habilidades" data-aos="fade-up">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python (PyQt5, Pygame)</li>
+        <li>Kotlin + Android Room</li>
+        <li>Git e GitHub</li>
+      </ul>
+    </section>
+
+          <!-- Projetos -->
+    <section id="projetos" data-aos="fade-up">
+      <h2>Projetos</h2>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <h3>Simulador de Bomba de Gasolina</h3>
+          <p>Feito em Python com PyQt5. Simula abastecimento com tipos de combustível e valor final.</p>
+          <a href="https://github.com/hincaluan/trabalho_ds.git" target="_blank">🔗 Ver no GitHub</a>
         </div>
-        
-        <div class="projeto">
-          <button class="toggle">🎓 Formação Acadêmica</button>
-          <div class="conteudo">
-            <ul>
-              <li>Curso Técnico em Desenvolvimento de Sistemas – Escola Manoel Ignácio (em andamento)</li>
-              <li>Ensino Médio – ´(em andamento)</li>
-            </ul>
-          </div>
-        </div>
-        
-          <div class="projeto">
-            <button class="toggle">🛠️ Habilidades e Competências</button>
-            <div class="conteudo">
-              <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Python (PyQt5, Pygame)</li>
-                <li>Kotlin + Android Room</li>
-                <li>Banco de Dados (MySQL, SQLite)</li>
-                <li>Trabalho em equipe e comunicação</li>
-                <li>Facilidade de aprendizado</li>
-              </ul>
-            </div>
-          </div>
-        
-          <div class="projeto">
-            <button class="toggle">💼 Experiência Profissional</button>
-            <div class="conteudo">
-              <ul>
-                <li>Operador de Caixa – Mercado Dia (desde dez/2024 - em andamento)</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        
-      
 
-      <section id="projetos">
-        <h2>Projetos</h2>
-      
-        <div class="projeto">
-          <button class="toggle">💻 Simulador de Bomba de Gasolina</button>
-          <div class="conteudo">
-            <p>Feito em Python com PyQt5. Simula abastecimento com tipos de combustível e valor final.</p>
-            <a href="https://github.com/hincaluan/trabalho_ds.git" target="_blank">🔗 Ver no GitHub</a>
+        <div class="projeto-card">
+          <h3>Jogo Medieval em godot(em andamento)</h3>
+          <p>Jogo 2D estilo pixel art com combate.</p>
+          <a href="https://github.com/ramonkoku/larajagodot.git" target="_blank">🔗 Ver no GitHub</a>
           </div>
-        </div>
-      
-        <div class="projeto">
-          <button class="toggle">⚔️ Jogo Medieval em godot(em andamento)</button>
-          <div class="conteudo">
-            <p>Jogo 2D estilo pixel art com combate.</p>
-            <a href="https://github.com/ramonkoku/larajagodot.git" target="_blank">🔗 Ver no GitHub</a>
-          </div>
-        </div>
-      </section>
-      
-
-      <section id="contato">
-        <h2>Contato</h2>
-        <p>Email: kokusilva206@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/ramonkoku" target="_blank">github.com/ramonkoku</a></p>
-      </section>
-    </main>
-
+      </div>
+    </section>
     <footer>
-      <p>&copy; 2025 - Ramon Silva de Matos</p>
+      <p>© 2025 Ramon Silva de Matos</p>
     </footer>
 
-    <script type="module" src="/src/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
